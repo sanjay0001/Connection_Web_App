@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2 class="ml-5">Your profile : </h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="" method="post" class="validated" novalidate>
+                    <div class="mb-1 input-group-sm">
+                        <label class="form-label">UserName :</label>
+                        <input type="text" class="form-control" name="username" required>
+                        <div class="invalid-feedback">
+                            Required
+                        </div>
+                    </div>
+                    <div class="mb-1 input-group-sm">
+                        <label class="form-label">ID/RollNo :</label>
+                        <input type="number" class="form-control" name="RollNo" required>
+                        <div class="invalid-feedback">
+                            Required
+                        </div>
+                    </div>
+                    <div>
+                    <label class="form-label">ID/RollNo :</label>
+                    <select name="Department" id="">
+                            <option value='Aeronautical Engineering Artificial Intelligence and Machine Learning'>Aeronautical Engineering Artificial Intelligence and Machine Learning</option>
+                            <option value='Automobile Engineering'>Automobile Engineering</option>
+                            <option value='Biomedical Engineering'>Biomedical Engineering</option>
+                            <option value='Biotechnology'>Biotechnology</option>
+                            <option value='Chemical Engineering'>Chemical Engineering</option>
+                            <option value='Civil Engineering'>Civil Engineering</option>
+                            <option value='Computer Science and Design'>Computer Science and Design</option>
+                            <option value='Computer Science and Engineering'>Computer Science and Engineering</option>
+                            <option value='Computer Science and Business Systems'>Computer Science and Business Systems</option>
+                            <option value='Electrical and Electronics Engineering'>Electrical and Electronics Engineering</option>
+                            <option value='Electronics and Communication Engineering'>Electronics and Communication Engineering</option>
+                            <option value='Food Technology'>Food Technology</option>
+                            <option value='Information Technology'>Information Technology</option>
+                            <option value='Mechanical Engineering'>Mechanical Engineering</option>
+                            <option value='Mechatronics'>Mechatronics</option>
+                            <option value='Robotics and Automation'>Robotics and Automation</option>
+                    </select>
+                 </div>
+                 <div class="mb-1 input-group-sm">
+                    <label class="form-label">Batch-Year :</label>
+                    <input type="number" class="form-control" name="batch" required>
+                    <div class="invalid-feedback">
+                        Required
+                    </div>
+                </div>
+                <div class="mb-1 input-group-sm">
+                    <label for="formFileSm" class="form-label">Add Profile: </label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file" name="Profile[image]"
+                        single>
+                </div>
+                <div>
+                    <label class="form-label d-inline-block">Gender :</label>
+                    <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" value="female" name="gender" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" value="female" name="gender" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Female
+                        </label>
+                      </div>
+                    <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" value="female" name="gender" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Others
+                        </label>
+                    </div>
+
+                </div>
+
+                <div>
+                    <label class="form-label d-inline-block">Hosteler/Dayscholor :</label>
+                    <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" value="female" name="place" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Day Scholar
+                        </label>
+                      </div>
+                      <div class="form-check d-inline-block">
+                        <input class="form-check-input" type="radio" value="female" name="place" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Hosteler
+                        </label>
+                    </div>
+    
+                </div>
+                <div class="mb-1 input-group-sm">
+                    <label class="form-label">Password :</label>
+                    <input type="password" class="form-control" name="batch" required>
+                    <div class="invalid-feedback">
+                        Required
+                    </div>
+                </div>
+                <div class="mb-1 input-group-sm">
+                    <label class="form-label">Confirm Password :</label>
+                    <input type="password" class="form-control" name="batch" required>
+                    <div class="invalid-feedback">
+                        Required
+                    </div>
+                </div>
+<button class="btn btn-primary">Create Account</button>
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+
+</html>
