@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+
+    <body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            <img class="mb-4" src="https://www.rajalakshmi.org/image/logo2.png" alt="">
+            <br>
+            <br>
+            <h1 class="h3 mb-3 font-weight-normal">
+                Login to your Account
+            </h1>
+            <br>
+            {{ form.roll_no.label() }}
+            {{ form.roll_no(class="form-control", placeholder="Rollno") }}
+
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control",type="password", placeholder="Password",) }}
+            <br>
+            {{ form.login(class="btn btn-lg btn-block btn-primary") }}
+
+
+
+
+        </form>
+    </div>
+</body>
+  
+{% endblock %}
