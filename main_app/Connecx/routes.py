@@ -6,10 +6,25 @@ from Connecx import db
 from Connecx.models import user
 
 
-@app.route('/')
-@app.route('/login')
+
+@app.route('/login',methods=['GET','POST'])
 def home():
 	form=register()
+	if(request.method=='POST'):
+		r_n=form.roll_no.data
+		pwrd=form.password1.data
+		for i in user.query.all():
+			if(r_n==i.rollno):
+				if(pwrd==i.password1):
+					return redirect(url_for('front_page'))
+				else:
+					pass
+			else:
+				pass
+
+
+			
+
 	return render_template('login.html',form=form)
 
 @app.route('/signup')
@@ -46,6 +61,8 @@ def faculty_signup():
 		db.session.commit()
 		return redirect(url_for('home'))
 	return render_template('faculty_signup.html',form=form)
+
+
 @app.route('/Home')
 def front_page():
 	return render_template('front_page.html')
