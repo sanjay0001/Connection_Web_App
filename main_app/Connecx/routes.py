@@ -66,3 +66,7 @@ def faculty_signup():
 @app.route('/Home')
 def front_page():
 	return render_template('front_page.html')
+
+@app.route('/profile')
+def profile_page():
+	return render_template('profile.html')
